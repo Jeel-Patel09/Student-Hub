@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#004080;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+.logo h1{
+    font-size:30px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    padding:6px 10px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    background:white;
+    color:#004080;
+    border-radius:5px;
+}
+
+.about{
+    text-align:center;
+    padding:70px 20px;
+    background:white;
+}
+
+.about h1{
+    color:#004080;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.about p{
+    width:70%;
+    margin:auto;
+    font-size:18px;
+    line-height:30px;
+    color:#555;
+}
+
+.mission{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:40px;
+}
+
+.card{
+    width:420px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+.card h2{
+    color:#004080;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    line-height:28px;
+}
+
+.services{
+    padding:60px 40px;
+    text-align:center;
+}
+
+.services h2{
+    color:#004080;
+    margin-bottom:35px;
+    font-size:32px;
+}
+
+.service-box{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.box{
+    width:240px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.box h3{
+    color:#004080;
+    margin-bottom:15px;
+}
+
+.box p{
+    color:#555;
+}
+
+footer{
+    margin-top:40px;
+    background:#004080;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.feedback{
+    width:90%;
+}
+
+}
