@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#004080;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+.logo h1{
+    font-size:30px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    padding:6px 10px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    background:white;
+    color:#004080;
+    border-radius:5px;
+}
+
+.heading{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.heading h1{
+    color:#004080;
+    margin-bottom:15px;
+}
+
+.heading p{
+    color:#555;
+    font-size:18px;
+}
+
+.event-controls{
+    width:90%;
+    margin:20px auto;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.event-controls input,
+.event-controls select{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+    background:white;
+}
+
+.event-controls input{
+    width:250px;
+}
+
+.events{
+    width:90%;
+    margin:30px auto;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    min-height:150px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px #00000026;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#004080;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    margin:10px 0;
+    line-height:1.5;
+}
+
+#loading,
+#error{
+    text-align:center;
+    margin:20px;
+}
+
+#error{
+    color:red;
+}
+
+.pagination{
+    text-align:center;
+    margin:30px;
+}
+
+.pagination button{
+    padding:10px 20px;
+    margin:5px;
+    background:#004080;
+    color:white;
+    border:0;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.pagination button:hover{
+    background:#0059b3;
+}
+
+.pagination button:disabled{
+    background:#aaa;
+    cursor:not-allowed;
+}
+
+#page{
+    margin:0 10px;
+    font-weight:bold;
+    color:#004080;
+}
+
+footer{
+    background:#004080;
+    color:white;
+    text-align:center;
+    padding:20px 0;
+    margin-top:40px;
+}
+
+footer p{
+    margin:0;
+}
+
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+        margin-top:15px;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .event-controls{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .event-controls input,
+    .event-controls select{
+        width:90%;
+    }
+
+    .events{
+        width:95%;
+    }
+
+    .card{
+        width:90%;
+    }
+}

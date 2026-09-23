@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events - StudentHub</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h1>StudentHub</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="profile_management.html">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="heading">
+    <h1>College Events</h1>
+    <p>Explore upcoming events and participate to enhance your skills.</p>
+</section>
+
+<section class="event-controls">
+    <input type="text" id="search" placeholder="Search events">
+    <select id="category">
+        <option value="all">All Categories</option>
+        <option value="Technical">Technical</option>
+        <option value="Sports">Sports</option>
+        <option value="Career">Career</option>
+        <option value="Cultural">Cultural</option>
+    </select>
+    <select id="sort">
+        <option value="date">Sort by Date</option>
+        <option value="title">Sort by Title</option>
+    </select>
+
+</section>
+<p id="loading">Loading events...</p>
+<p id="error"></p>
+<section id="eventList" class="events"></section>
+
+<div class="pagination">
+    <button id="prev">Previous</button>
+    <span id="page"></span>
+    <button id="next">Next</button>
+</div>
+
+<footer>
+    <p>&copy; 2026 StudentHub Portal. All Rights Reserved.</p>
+</footer>
+<script src="event.js"></script>
+
+</body>
+</html>
