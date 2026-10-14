@@ -1,0 +1,19 @@
+# Local credentials / environment
+.env
+.env.*
+# Logs and temporary files
+*.log
+tmp/
+temp/
+# Uploaded user content (keep only the protection rule)
+uploads/*
+!uploads/.htaccess
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Dependencies and generated archives
+node_modules/
+vendor/
+*.zip
