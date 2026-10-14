@@ -1,0 +1,7 @@
+# Disable directory listing
+Options -Indexes
+
+# Never allow script files to be accessed or executed from this folder
+<FilesMatch "\.(php|phtml|php3|php4|php5|phar|phps|cgi|pl|py|sh)$">
+    Require all denied
+</FilesMatch>

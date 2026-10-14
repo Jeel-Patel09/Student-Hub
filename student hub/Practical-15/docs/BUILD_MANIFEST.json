@@ -1,0 +1,16 @@
+{
+  "ignored": [
+    "Practical 1",
+    "Practical 2"
+  ],
+  "source_archives_reviewed": [
+    "Student-Hub Project.zip",
+    "Practical-6.zip",
+    "Practical-7.zip",
+    "individual Practical 12/13/14 archives from prior conversation"
+  ],
+  "integrated_database": "studenthub_final_db",
+  "setup_sql": "database/studenthub_final_setup.sql",
+  "php_files": 72,
+  "php_syntax_check": "passed"
+}
